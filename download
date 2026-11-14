@@ -1,0 +1,31 @@
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local application data, hand-history exports, and secrets
+/data/
+poker_hand_history.json
+poker_hand_history.csv
+*_hand_history.json
+*_hand_history.csv
+.env
+.env.*
+!.env.example
+
+# Keep only the privacy-safe project Streamlit config; exclude secrets/other local files
+.streamlit/*
+!.streamlit/
+.streamlit/*
+!.streamlit/config.toml
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

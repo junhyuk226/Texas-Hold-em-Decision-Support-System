@@ -1,0 +1,11 @@
+# Local-only configuration for the public release.
+# Bind the app to this computer rather than the local network.
+[server]
+address = "127.0.0.1"
+showEmailPrompt = false
+enableCORS = true
+enableXsrfProtection = true
+
+[browser]
+serverAddress = "127.0.0.1"
+gatherUsageStats = false

@@ -1,0 +1,131 @@
+"""Small explicit UI translation dictionary for Korean/English."""
+from __future__ import annotations
+
+EN: dict[str, str] = {
+    "OFFLINE POKER STUDY · LOCAL ONLY": "OFFLINE POKER STUDY · LOCAL ONLY",
+    "♠️ 내 포커 상황 분석하기": "♠️ Poker Hand Analyzer",
+    "v10.2.4 · 빠른 카드 입력, 핸드 기록, Monte Carlo 시각화": "v10.2.4 · Faster card entry, hand history and Monte Carlo visualization.",
+    "🟢 현재 핸드 진행 중 · 내 카드와 공개 카드는 다음 단계에서도 유지됩니다.": "🟢 Hand in progress · Your cards and community cards stay in place as you advance.",
+    "인원": "Players", "단계": "Stage", "내 카드": "My cards", "공용 카드": "Board", "게임 정보": "Game info", "결과": "Results",
+    "테이블에 몇 명이 앉아 있나요?": "How many players are at the table?",
+    "나를 포함한 전체 인원으로 선택해 주세요. 상대가 몇 명인지 화면에 표시해 드립니다.": "Choose the total number of players, including you. The table will show the opponents.",
+    "참가 인원": "Total players", "나를 포함해서 세는 숫자입니다.": "Count yourself as one player.",
+    "나 1명 + 상대 {opponents}명": "You: 1 + Opponents: {opponents}",
+    "사람 모양은 테이블 인원을 보여주는 그림입니다. 실제 상대의 카드나 행동을 추적하지 않습니다.": "The avatars only illustrate the table size. The app does not track opponents' actual cards or actions.",
+    "게임 시작하기 →": "Start hand →",
+    "지금 카드가 어디까지 공개됐나요?": "How many community cards are visible now?",
+    "어려운 포커 용어 대신 테이블 위에 공개된 카드 수로 고르면 됩니다.": "Choose based on the number of cards on the table; no poker terminology needed.",
+    "게임 시작 전 (Preflop)": "Before the flop (Preflop)", "첫 공개 카드 3장 (Flop)": "First 3 community cards (Flop)",
+    "네 번째 카드 공개 (Turn)": "Fourth community card (Turn)", "마지막 카드 공개 (River)": "Final community card (River)",
+    "아직 공개된 카드가 없어요": "No community cards are visible yet",
+    "각자 비공개 카드 2장만 받은 상태예요. 테이블 가운데 공개 카드는 아직 없습니다.": "Each player has two private cards. No community cards are on the table yet.",
+    "내 카드 2장으로 시작하는 순간": "Starting with your two private cards",
+    "테이블 가운데 카드 3장이 놓였어요": "Three community cards are on the table",
+    "모든 사람이 함께 사용하는 카드 3장이 처음 공개된 상태예요.": "The first three shared community cards have been revealed.",
+    "첫 3장이 공개된 순간": "The first three cards are revealed",
+    "공용 카드가 한 장 더 공개됐어요": "One more community card has been revealed",
+    "처음 공개된 3장에 네 번째 카드가 추가된 상태예요.": "A fourth community card has been added to the first three.",
+    "4번째 공용 카드까지 나온 순간": "The fourth community card is revealed",
+    "마지막 공용 카드까지 공개됐어요": "The final community card is revealed",
+    "테이블 가운데 공용 카드 5장이 모두 공개된 마지막 상태예요.": "All five community cards are now visible.",
+    "최종 5장이 모두 놓인 순간": "All five community cards are on the table",
+    "선택": "Select", "선택한 단계: {label} — 공용 카드 {count}장을 입력합니다.": "Selected: {label} — enter {count} community cards.",
+    "내 카드 입력하기": "Enter my cards", "내 카드 2장을 놓아 주세요": "Add your two private cards",
+    "카드에 적힌 숫자·알파벳과 무늬를 짧게 입력하면 됩니다. 예: AS KH, 10D QC": "You can enter cards using a rank and a suit shortcut, in either order. Examples: AS, SA, KH, HK, 10D, D10.",
+    "무늬와 숫자를 고르면 두 번째 선택 직후 카드가 자동으로 테이블에 놓입니다. 추가 버튼을 누를 필요가 없어요.": "Choose a suit and a rank. The card is dealt automatically after the second choice.",
+    "카드를 두 번 선택해 주세요": "Choose a suit and a rank",
+    "키보드로 빠르게 입력": "Quick keyboard entry",
+
+    "선택된 내 카드 · 아래 × 버튼으로 한 장씩 회수합니다.": "Your selected cards · use the × button under a card to remove it.",
+    "내 카드 2장이 준비됐어요.": "Your two private cards are ready.", "↶ 실행 취소": "↶ Undo", "← 이전": "← Back",
+    "공용 카드 입력하기 →": "Add community cards →", "테이블 가운데 공개된 카드를 놓아 주세요": "Add the community cards",
+    "선택된 공용 카드 · 각 카드 아래 × 회수 버튼으로 한 장씩 제거합니다.": "Selected community cards · use the × button under a card to remove it.",
+    "이 단계에서는 공용 카드가 아직 없습니다. 바로 다음으로 넘어가면 돼요.": "There are no community cards at this stage. Continue to the next step.",
+    "{remaining}장을 더 선택하면 됩니다. 카드는 한 장씩 테이블에 놓입니다.": "Choose {remaining} more card(s). Cards are dealt onto the table one at a time.",
+    "공용 카드 {count}장이 모두 입력됐습니다.": "All {count} community cards have been added.",
+    "게임 정보 입력하기 →": "Enter game details →", "현재 게임 상황을 알려 주세요": "Enter the current game situation",
+    "정확한 금액과 남아 있는 상대 수를 입력하면 현재 승산과 콜 판단을 계산합니다.": "Enter the pot, call amount and remaining opponents to calculate your equity and call decision.",
+    "아직 게임에 남아 있는 상대는 몇 명인가요?": "How many opponents are still in the hand?",
+    "상대는 어떤 카드로 게임에 참여한다고 볼까요?": "What kind of hands might your opponents have?",
+    "잘 모르겠으면 기본 선택인 ‘일반적인 플레이’를 그대로 두세요.": "Not sure? Keep the default: Typical range.",
+    "강한 카드 위주": "Strong hands", "일반적인 플레이": "Typical range", "넓은 카드 범위": "Wide range", "완전 무작위": "Random cards",
+    "상대가 좋은 시작 카드일 때 주로 게임에 들어왔다고 가정합니다.": "Assumes opponents usually enter with stronger starting hands.",
+    "강한 카드와 보통 카드를 함께 고려하는 기본 가정입니다.": "A balanced baseline that includes strong and average starting hands.",
+    "상대가 비교적 다양한 카드로 게임에 참여한다고 가정합니다.": "Assumes opponents play a broader variety of starting hands.",
+    "52장 중 가능한 카드 조합을 모두 같은 비중으로 취급합니다.": "Treats all possible card combinations from the 52-card deck equally.",
+    "이 선택은 계산을 위한 가정입니다. 앱이 실제 상대의 카드를 보거나 성향을 알아내는 것은 아닙니다.": "This is an assumption for calculation. The app cannot see opponents' cards or infer their behavior.",
+    "팟과 베팅 금액": "Pot and bet amounts", "간편": "Simple", "고급": "Advanced", "현재 팟": "Current pot",
+    "내가 추가로 콜할 금액": "Additional amount to call", "상대가 이번 라운드에 넣은 금액": "Opponent's contribution this round",
+    "내가 이번 라운드에 이미 넣은 금액": "My contribution this round",
+    "내가 추가로 콜하기 전, 현재 가운데 쌓인 포인트입니다.": "The points currently in the pot, before your additional call.",
+    "계속 참여하려면 지금 더 내야 하는 포인트입니다.": "The number of points you must add now to stay in the hand.",
+    "계산에 사용할 추가 콜 금액: **{amount:,} 포인트**": "Additional call used for calculation: **{amount:,} points**",
+    "모든 금액은 포인트이며, 입력 단위는 5입니다. 실제 돈을 다루거나 베팅을 실행하지 않습니다.": "All amounts are points entered in increments of 5. No real money or bets are involved.",
+    "금액은 0 이상, 5 포인트 단위로 입력해 주세요. 예: 0, 5, 10, 15...": "Enter a non-negative amount in increments of 5, e.g. 0, 5, 10, 15...",
+    "내 승산 분석하기 →": "Analyze my equity →", "현재 내 승산은 이 정도예요": "Here is your current equity",
+    "선택한 상대 유형을 가정해 컴퓨터가 카드를 25,000번 가상으로 나눠 본 결과입니다.": "Monte Carlo result from 25,000 simulated deals using the selected opponent range.",
+    "내가 가져갈 것으로 기대되는 팟 비율": "Expected share of the pot", "내가 이길 확률": "Chance to win outright", "비길 확률": "Chance to tie",
+    "질 확률: **{loss:.2f}%** · 여기서 ‘팟 비율’은 무승부일 때 나눠 받는 몫까지 포함한 기대값입니다.": "Chance to lose: **{loss:.2f}%** · Expected pot share includes your portion of ties.",
+    "승산 흐름": "Equity over the hand", "초록 선은 내 승산, 주황 선은 지금 콜하려면 필요한 최소 승산입니다.": "Green: your equity. Orange: the minimum equity needed to call.",
+    "내 승산": "Your equity", "콜에 필요한 승산": "Equity needed to call", "핸드 진행 기록": "Hand progression", "확률": "Probability",
+    "현재 내 승산": "Current equity", "현재 콜에 필요한 승산": "Equity needed to call now",
+    "새 공용 카드가 열리면 내 승산이 다시 계산됩니다. 베팅만 바꾸면 내 승산은 보통 그대로지만, 콜에 필요한 승산은 바뀝니다. 그래프 점에 마우스를 올리면 당시 팟과 콜 금액도 볼 수 있어요.": "Your equity is recalculated when a community card is revealed. Changing only the bet usually leaves equity unchanged but changes the call threshold. Hover over a point to see the pot and call amounts.",
+    "첫 분석 결과입니다. 다음 카드가 공개되거나 베팅 정보를 바꾸고 다시 분석하면 그래프가 쌓입니다.": "This is your first result. The chart will build as you reveal more cards or update the betting details.",
+    "내가 추천하는 무브": "Recommended move", "현재 입력과 선택한 상대 유형 기준": "Based on your current inputs and opponent-range assumption",
+    "추천 근거: {reason}": "Why: {reason}",
+    "기대값은 현재 팟과 추가 콜만 반영한 단일 판단 계산입니다. 이후 베팅, 레이크, 사이드팟, 토너먼트 상황은 반영하지 않습니다.": "EV is a single-decision estimate using the current pot and call only. It excludes future betting, rake, side pots and tournament factors.",
+    "상세 결과와 계산 방식 보기": "Detailed results and methodology", "95% 신뢰구간: {low:.2f}% – {high:.2f}%": "95% confidence interval: {low:.2f}% – {high:.2f}%",
+    "표본을 무작위로 뽑으면서 생기는 오차 범위입니다. 상대 유형을 잘못 가정했을 때 생기는 오차는 포함하지 않습니다.": "This interval covers Monte Carlo sampling error only. It does not include errors from an incorrect opponent-range assumption.",
+    "계산 방식: Monte Carlo(가상 카드 분배 반복) · {samples:,}회": "Method: Monte Carlo simulation · {samples:,} samples",
+    "상대 가정: {style}": "Opponent range: {style}", "상대 수: {count}명": "Active opponents: {count}", "계산 모델: {model}": "Model: {model}",
+    "상대 유형 설명: {help}": "Opponent-range assumption: {help}",
+    "같은 카드를 입력하면 같은 표본 추출 순서로 비교할 수 있도록 내부 계산 설정을 고정했습니다. 일반 사용자는 별도로 설정할 필요가 없습니다.": "The simulation seed is fixed so the same inputs can be compared consistently. No setup is needed.",
+    "다른 상대 유형이면 결과가 얼마나 달라질까요?": "How would another opponent range change the result?",
+    "실제 상대 유형을 추측하는 기능이 아닙니다. 아래 유형을 직접 선택해 다시 계산하면 결과가 달라질 수 있습니다.": "This does not infer your opponents' actual cards. Choose another range and recalculate to compare assumptions.",
+    "상대 유형 바꾸기": "Change opponent range", "이 핸드 계속하기": "Continue this hand",
+    "다음 단계로 계속 · {label} →": "Continue to {label} →", "리버까지 공개됐습니다. 이 핸드는 최종 카드 단계입니다.": "The river is revealed. This is the final card stage.",
+    "베팅 정보 수정 / 다시 분석": "Edit betting details / Re-analyze", "이 핸드 기록 저장": "Save this hand",
+    "현재 핸드 진행 상태를 저장했습니다.": "Current hand progress saved.", "저장하지 못했습니다: {error}": "Could not save: {error}",
+    "현재 핸드 상태가 저장됐습니다.": "This hand is saved.", "현재 핸드를 종료하고 새 핸드 시작하기": "End this hand and start a new one",
+    "새 핸드를 시작하면 내 카드·공용 카드·승산 변화 기록이 초기화됩니다.": "Starting a new hand clears your cards, community cards and equity history.", "새 핸드 시작": "Start a new hand",
+    "저장된 핸드 기록": "Saved hand history", "아직 저장된 핸드가 없습니다. 위의 ‘이 핸드 기록 저장’을 누르면 여기에 표시됩니다.": "No saved hands yet. Select ‘Save this hand’ above to add one.",
+    "핸드 기록을 불러오지 못했습니다: {error}": "Could not load hand history: {error}",
+    "포커 단계가 헷갈릴 때 · 4단계 설명": "Poker streets · A quick guide",
+    "이 앱이 계산하는 것과 계산하지 않는 것": "What this app does and does not calculate",
+    "게임 정보로 돌아가기": "Back to game details", "아직 분석 결과가 없습니다. 게임 정보를 입력한 뒤 분석해 주세요.": "There is no analysis yet. Enter the game details first.",
+}
+
+
+def translate(text: str, language: str = "KOR", **kwargs) -> str:
+    """Translate a UI string and safely format optional placeholders."""
+    result = EN.get(text, text) if str(language).upper() == "EN" else text
+    if kwargs:
+        result = result.format(**kwargs)
+    return result
+
+EN.update({
+    "카드를 두 번 선택해 주세요": "Choose a suit and a rank",
+    "↶ 실행 취소": "↶ Undo",
+    "← 이전": "← Back",
+    "나를 포함해서 세는 숫자입니다.": "Count yourself as one player.",
+    "카드를 입력해 주세요.": "Please enter a card.",
+    "이미 테이블에 있는 카드가 포함되어 있습니다. 중복 카드는 사용할 수 없어요.": "One or more cards are already on the table. Duplicate cards are not allowed.",
+    "내 카드는 최대 {maximum}장까지 입력할 수 있어요.": "You can enter up to {maximum} private cards.",
+    "현재 단계에서는 공용 카드 {maximum}장까지만 입력할 수 있어요.": "You can enter up to {maximum} community cards at this stage.",
+    "선택된 내 카드 · 아래 × 버튼으로 한 장씩 회수합니다.": "Your selected cards · use the × button under a card to remove it.",
+    "무늬와 숫자를 고르면 두 번째 선택 직후 카드가 자동으로 테이블에 놓입니다. 추가 버튼을 누를 필요가 없어요.": "Choose a suit and a rank. The card is dealt automatically after the second choice.",
+    "상대 수": "Opponents",
+    "내 팟 비율": "Equity",
+})
+
+
+EN.update({
+    "질 확률: **{loss:.2f}%** · 여기서 ‘팟 비율’은 무승부일 때 나눠 받는 몫까지 포함한 기대값.": "Chance to lose: **{loss:.2f}%** · Expected pot share includes your portion of ties.",
+})
+
+
+EN.update({
+    "상대 카드 가정": "Opponent model",
+    "참가자 {count}명": "{count} players",
+    "중간 범위 기본 모델": "Balanced baseline",
+})
