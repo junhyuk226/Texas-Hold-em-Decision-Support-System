@@ -25,4 +25,4 @@
 
 ## Test boundary
 
-The 144 automated tests ran in the development container. UI smoke tests use a Streamlit API stub; they do not prove that native Streamlit widgets, browser downloads, or macOS theme switching work in the user's browser. Do not claim full end-to-end macOS validation until the local checklist above is completed.
+The 145 automated tests ran in the development container. UI smoke tests use a Streamlit API stub; they do not prove that native Streamlit widgets, browser downloads, or macOS theme switching work in the user's browser. Do not claim full end-to-end macOS validation until the local checklist above is completed.
